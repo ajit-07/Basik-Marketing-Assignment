@@ -110,19 +110,13 @@ app.put('/update', async (req, res) => {
         }).promise();
 
         fs.unlinkSync(fileName);
-        return res.status(201).send({ status: true, message: 'CDN entry updated successfully', invalidation });
+        return res.status(200).send({ status: true, message: 'CDN entry updated successfully', invalidation });
 
     } catch (error) {
         console.log(error)
         return res.status(500).send({ status: false, message: error.message })
     }
 })
-
-
-
-
-
-
 
 
 
