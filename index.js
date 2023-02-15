@@ -17,8 +17,8 @@ app.get('/', (req, res) => {
 
 //Configuration to AWS server.
 aws.config.update({
-    accessKeyId: "AKIA2V74B4GZ7Y2RL2OH",
-    secretAccessKey: "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",
+    accessKeyId: "ACCESS_KEY",
+    secretAccessKey: "SECRET_ACCESS_KEY",
     region: "ap-south-1"
 })
 
